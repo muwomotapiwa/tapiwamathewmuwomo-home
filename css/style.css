@@ -1,0 +1,72 @@
+body {
+margin: 0;
+background: #032d60;
+color: white;
+font-family: Arial, sans-serif;
+overflow: hidden;
+height: 100vh;
+position: relative;
+}
+
+.center-content {
+position: relative;
+z-index: 2;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100vh;
+text-align: center;
+}
+
+.profile-img {
+max-width: 150px;
+width: 30vw;
+margin-bottom: 20px;
+border-radius: 50%;
+box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+font-size: 1.5rem;
+color: white;
+padding: 0 1rem;
+}
+
+.cert {
+position: absolute;
+font-size: 1rem;
+color: white;
+opacity: 0;
+animation: fadeInOut 4s linear forwards;
+pointer-events: none;
+z-index: 1;
+}
+
+@keyframes fadeInOut {
+0% {
+opacity: 0;
+transform: scale(0.5);
+}
+20% {
+opacity: 1;
+transform: scale(1);
+}
+80% {
+opacity: 1;
+transform: scale(1);
+}
+100% {
+opacity: 0;
+transform: scale(0.5);
+}
+}
+
+#cert-container {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: 1;
+}
